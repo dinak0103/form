@@ -1,0 +1,100 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap');
+
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal {
+  text-align: center;
+  position: absolute;
+  z-index: 200;
+  top: 20%;
+  left: 12%;
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+.input {
+  height: 60px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--body-color);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: box-shadow .3s, background .4s;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: #004b03;
+  padding: 1rem 1.5rem;
+  color: white;
+  transition: background .3s;
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 1064px) {
+  .container {
+    margin-inline: auto;
+  }
+
+}
